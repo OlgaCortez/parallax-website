@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scroll City Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>Amazing Cities Around The World</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet!</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="chicity.jpg" class="parllaximg1">
+        <h2>CHICAGO</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet!</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="tokyo.jpg" class="parllaximg2">
+        <h2>TOKYO</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet!</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="london.jpg" class="parllaximg3">
+        <h2>LONDON</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet!</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="ny.jpg" class="parllaximg4">
+        <h2>NEW YORK</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore quibusdam voluptas officiis. Possimus, vitae molestiae. Porro vero architecto, dicta excepturi atque velit animi in. Non voluptates cum possimus! Beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid suscipit ex assumenda! Illo, at eum doloremque ducimus repellendus enim et alias repellat consequatur tempora blanditiis eligendi porro. Molestiae, eveniet!</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+        var image1 = document.getElementsByClassName('parllaximg1');
+        var image2 = document.getElementsByClassName('parllaximg2');
+        var image3 = document.getElementsByClassName('parllaximg3');
+        var image4 = document.getElementsByClassName('parllaximg4');
+        new simpleParallax(image1,{
+            orientation: 'left'
+        });
+        new simpleParallax(image2,{
+            orientation: 'right'
+        });
+        new simpleParallax(image3,{
+            orientation: 'up right'
+        });
+        new simpleParallax(image4,{
+            orientation: 'down left'
+        });
+    </script>
+</body>
+</html>
